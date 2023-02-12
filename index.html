@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Javascript Intro</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="./css/style.css">
+        <h1>Tell me your name</h1>
+        <input id="inputName" />
+        <button onclick="sayHello()">Say Hello</button>
+        <h2 id="greeting"></h2>
+        <br />
+        
+        <input id="input2" onkeyup="updateGreeting()"/>
+
+
+        <script>
+            let greeting = document.getElementById('greeting');
+
+            function sayHello() {
+                let input = document.getElementById('inputName');
+                greeting.innerHTML = 'Hello ' + input.value;
+            }
+
+            function updateGreeting() {
+                let input2 = document.getElementById('input2');
+                greeting.innerHTML = 'Hello ' + input2.value;
+            }
+        </script>
+    </body>
+    <body>
+        <h2 id="გამრავლება">0</h2>
+        <button onclick="გამრავლება()">
+          გამრავლება
+        </button>
+        <button onclick="გაყოფა()">
+         გაყოფა 
+        </button>
+        <script src="./script.js"></script>
+        <button onclick="მიმატება()">
+          მიმატება
+        </button>
+        <button onclick="გამოკლება()">
+         გამოკლება   
+        </button>
+        <style>
+            button{
+                color: blue;
+            }
+        </style>
+    </body>
+</html>
