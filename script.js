@@ -6,7 +6,7 @@ function გამრავლება(){
     counterelement.innerHTML = count;
 }
 function გაყოფა(){
-    count = count ;
+    count = count /2;
     counterelement.innerHTML =count;
 }
 function მიმატება(){
